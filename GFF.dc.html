@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Gym Fes Fitness</title>
+<script src="./_runtime/react.js"></script>
+<script src="./_runtime/react-dom.js"></script>
+<script src="./_runtime/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+a.nav:hover{color:#FFFFFF}
+a.btn:hover{filter:brightness(1.1)}
+a:focus-visible{outline:3px solid #FFFFFF;outline-offset:3px}
+</style>
+</helmet>
+<div style="--accent: {{accent}}; --bg: #0E1A19; --surface: #162826; --line: #274340; --text: #EEF3F0; --muted: #A5BAB5; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden">
+
+<!-- Header -->
+<div style="border-bottom: 1px solid var(--line)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="#accueil" style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1">Gym Fes <span style="color: var(--accent)">Fitness</span></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px; font-weight: 500; color: var(--muted)">
+<a class="nav" href="#activites">Activités</a>
+<a class="nav" href="#coachs">Coachs</a>
+<a class="nav" href="#tarifs">Abonnements</a>
+<a class="nav" href="#horaires">Horaires</a>
+<a class="nav" href="#contact">Contact</a>
+</div>
+</div>
+</div>
+
+<!-- Hero -->
+<div id="accueil" style="position: relative; overflow: hidden">
+<div style="position: absolute; top: -120px; right: -160px; width: 720px; max-width: 100%; color: var(--accent); opacity: 0.22; pointer-events: none" aria-hidden="true">
+<svg viewBox="0 0 200 200" width="100%" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+<rect x="20" y="20" width="160" height="160"></rect>
+<rect x="20" y="20" width="160" height="160" transform="rotate(45 100 100)"></rect>
+<rect x="45" y="45" width="110" height="110"></rect>
+<rect x="45" y="45" width="110" height="110" transform="rotate(45 100 100)"></rect>
+<rect x="70" y="70" width="60" height="60"></rect>
+<rect x="70" y="70" width="60" height="60" transform="rotate(45 100 100)"></rect>
+</svg>
+</div>
+<div style="position: relative; max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 96px 24px 88px; display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Salle de sport 100 % hommes · Oued Fès</div>
+<h1 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(56px, 11vw, 132px); line-height: 0.92; text-transform: uppercase; letter-spacing: 0.01em; max-width: 900px; text-wrap: balance">Entraînez-vous à Fès. Chaque jour.</h1>
+<p style="margin: 0; max-width: 560px; font-size: 19px; color: var(--muted)">Musculation, fitness et cours collectifs avec des coachs professionnels. Ouvert tous les jours sauf le dimanche.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a class="btn" href="https://wa.me/212775306726" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 0 28px; background: var(--accent); color: #07110F; font-weight: 600; border-radius: 4px">Écrire sur WhatsApp</a>
+<a class="btn" href="#tarifs" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 0 28px; border: 1.5px solid var(--text); font-weight: 600; border-radius: 4px">Voir les abonnements</a>
+</div>
+</div>
+<div style="position: relative; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 12px 56px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: 0.04em; text-transform: uppercase">
+<span>Matériel haut de gamme</span>
+<span>Coachs professionnels</span>
+<span>Programmes personnalisés</span>
+</div>
+</div>
+</div>
+
+<!-- Activités -->
+<div id="activites" style="background: var(--surface)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 1; text-transform: uppercase">Activités</h2>
+<p style="margin: 0; color: var(--muted); max-width: 560px">Ce que vous trouvez à Gym Fes Fitness.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Musculation</h3>
+<p style="margin: 0; color: var(--muted)">Les derniers appareils de musculation pour travailler tous les muscles.</p>
+</div>
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Fitness</h3>
+<p style="margin: 0; color: var(--muted)">Des séances de fitness pour tonifier le corps et gagner en endurance.</p>
+</div>
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Cardio</h3>
+<p style="margin: 0; color: var(--muted)">Des appareils de cardio pour travailler le souffle et dépenser des calories.</p>
+</div>
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Condition physique</h3>
+<p style="margin: 0; color: var(--muted)">Functional training et renforcement musculaire pour la force et la résistance.</p>
+</div>
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Cours collectifs</h3>
+<p style="margin: 0; color: var(--muted)">Body pump, circuit training, tabata et tai bo avec un coach, le mardi, le jeudi et le samedi.</p>
+</div>
+<div style="background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em">Boxe</h3>
+<p style="margin: 0; color: var(--muted)">Des cours de boxe pour travailler la technique et la condition physique.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Coachs -->
+<div id="coachs" style="border-bottom: 1px solid var(--line)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 1; text-transform: uppercase">Nos coachs</h2>
+<p style="margin: 0; color: var(--muted); max-width: 560px">Une équipe de coachs à votre écoute pour vous accompagner à chaque séance.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<img src="mohammed.jpg" alt="Coach Mohammed El Bourkadi" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top">
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Mohammed El Bourkadi</h3>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Coach</div>
+<p style="margin: 0; color: var(--muted)">L'engagement est le secret du succès : un entraînement régulier, une bonne alimentation et un esprit positif.</p>
+</div>
+</div>
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<img src="ahmed.jpg" alt="Coach Ahmed El Bourkadi" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top">
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Ahmed El Bourkadi</h3>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Coaching personnel</div>
+<p style="margin: 0; color: var(--muted)">Un programme d'entraînement personnalisé pour atteindre vos objectifs sportifs, avec un suivi professionnel.</p>
+</div>
+</div>
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<img src="rachid.jpg" alt="Coach Rachid" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top">
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Rachid</h3>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Coach</div>
+<p style="margin: 0; color: var(--muted)">Là pour vous conseiller et vous encourager, quel que soit votre niveau.</p>
+</div>
+</div>
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<img src="amal.jpg" alt="Coach Amal" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top">
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Amal</h3>
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Coach</div>
+<p style="margin: 0; color: var(--muted)">Passionnée de fitness, elle vous accompagne avec énergie et motivation.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Abonnements -->
+<div id="tarifs">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 1; text-transform: uppercase">Abonnements</h2>
+<p style="margin: 0; color: var(--muted); max-width: 560px">Trois formules, quatre durées. Prix en dirhams.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Musculation</h3>
+<p style="margin: 0 0 14px; color: var(--muted)">Accès à la salle de musculation.</p>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">150 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>3 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">350 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>6 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">650 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 an</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">1200 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+</div>
+
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Fitness</h3>
+<p style="margin: 0 0 14px; color: var(--muted)">Cours collectifs de fitness.</p>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">200 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>3 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">500 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>6 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">900 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 an</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">1500 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+</div>
+
+<div style="background: var(--surface); border: 1.5px solid var(--accent); border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1">Gold Pack</h3>
+<p style="margin: 0 0 14px; color: var(--muted)">Musculation, fitness et condition physique dans un seul abonnement.</p>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">250 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>3 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">600 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>6 mois</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">1050 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line)"><span>1 an</span><span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 32px; font-variant-numeric: tabular-nums">1950 <span style="font-size: 18px; color: var(--muted)">DH</span></span></div>
+</div>
+
+</div>
+<p style="margin: 0; color: var(--muted)">Assurance annuelle : 100 DH.</p>
+</div>
+</div>
+
+<!-- Horaires -->
+<div id="horaires" style="background: var(--surface)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 40px 80px">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 1; text-transform: uppercase">Horaires</h2>
+<p style="margin: 0; color: var(--muted); max-width: 420px">Ouverture de la salle et horaires des cours collectifs.</p>
+</div>
+<div style="flex: 2 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); padding-bottom: 8px">Ouverture de la salle</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line)">
+<span style="font-weight: 600">Lundi – Jeudi</span>
+<span style="color: var(--muted); font-variant-numeric: tabular-nums">07:00 – 23:00</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line)">
+<span style="font-weight: 600">Vendredi</span>
+<span style="color: var(--muted); font-variant-numeric: tabular-nums">15:00 – 23:00</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line)">
+<span style="font-weight: 600">Samedi</span>
+<span style="color: var(--muted); font-variant-numeric: tabular-nums">07:00 – 23:00</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line)">
+<span style="font-weight: 600">Dimanche</span>
+<span style="color: var(--muted)">Fermé</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); padding-bottom: 8px">Cours collectifs</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid var(--line)">
+<span style="font-weight: 600">Mardi · Jeudi · Samedi</span>
+<span style="color: var(--muted); font-variant-numeric: tabular-nums">10:00 · 13:00 · 19:30</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 1; text-transform: uppercase">Venez nous voir à Fès</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Adresse</div>
+<div>Rue 2, n° 49, Hay Oued Fès<br>Près de l'hôtel Zalagh, Fès</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">Téléphone fixe</div>
+<div style="font-variant-numeric: tabular-nums">0535 63 28 10</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent)">WhatsApp</div>
+<div style="font-variant-numeric: tabular-nums">0775 30 67 26</div>
+</div>
+</div>
+<div>
+<a class="btn" href="https://wa.me/212775306726" style="display: inline-flex; align-items: center; min-height: 52px; box-sizing: border-box; padding: 0 28px; background: var(--accent); color: #07110F; font-weight: 600; border-radius: 4px">Écrire sur WhatsApp</a>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="border-top: 1px solid var(--line)">
+<div style="max-width: 1160px; margin: 0 auto; box-sizing: border-box; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>Gym Fes Fitness, Hay Oued Fès</span>
+<span>Tous droits réservés</span>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#6E9BFF","options":["#6E9BFF","#3FD0A5","#F2A93B","#FF6B5A"]},"$preview":{"width":1280,"height":3000}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#6E9BFF' };
+}
+}
+</script>
+</body>
+</html>
